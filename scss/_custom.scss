@@ -1,0 +1,8 @@
+/* Custom Tomato styles */
+
+.container {
+  & > header {
+    padding: 0 2em;
+  }
+}
+
