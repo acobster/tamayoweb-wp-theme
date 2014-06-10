@@ -1,8 +1,4 @@
 <?php
-/*
-Author: Ole Fredrik Lie
-URL: http://olefredrik.com
-*/
 
 // Return entry meta information for posts
 require_once('library/entry-meta.php');
