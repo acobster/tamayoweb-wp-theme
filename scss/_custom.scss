@@ -5,6 +5,8 @@
 
 /* FONTS */
 
+$fonts-dir: "/wp/wp-content/themes/Tomato/fonts/";
+
 /*
  * Calluna Sans
  *
@@ -15,33 +17,33 @@
 
 @font-face {
     font-family: 'CallunaSansRegular';
-    src: url('/wp/wp-content/themes/Tomato/fonts/CallunaSansRegular-webfont.eot');
-    src: url('/wp/wp-content/themes/Tomato/fonts/CallunaSansRegular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/wp/wp-content/themes/Tomato/fonts/CallunaSansRegular-webfont.woff') format('woff'),
-         url('/wp/wp-content/themes/Tomato/fonts/CallunaSansRegular-webfont.ttf') format('truetype'),
-         url('/wp/wp-content/themes/Tomato/fonts/CallunaSansRegular-webfont.svg#CallunaSansRegular') format('svg');
+    src: url("#{$fonts-dir}CallunaSansRegular-webfont.eot");
+    src: url("#{$fonts-dir}CallunaSansRegular-webfont.eot?#iefix") format('embedded-opentype'),
+         url("#{$fonts-dir}CallunaSansRegular-webfont.woff") format('woff'),
+         url("#{$fonts-dir}CallunaSansRegular-webfont.ttf") format('truetype'),
+         url("#{$fonts-dir}CallunaSansRegular-webfont.svg#CallunaSansRegular") format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
   font-family: 'high_tower_text_italic';
-  src: url('/wp/wp-content/themes/Tomato/fonts/high_tower_text_italic-webfont.eot');
-  src: url('/wp/wp-content/themes/Tomato/fonts/high_tower_text_italic-webfont.eot?#iefix') format('embedded-opentype'),
-    url('/wp/wp-content/themes/Tomato/fonts/high_tower_text_italic-webfont.woff') format('woff'),
-    url('/wp/wp-content/themes/Tomato/fonts/high_tower_text_italic-webfont.ttf') format('truetype'),
-    url('/wp/wp-content/themes/Tomato/fonts/high_tower_text_italic-webfont.svg#high_tower_textitalic') format('svg');
+  src: url("#{$fonts-dir}high_tower_text_italic-webfont.eot");
+  src: url("#{$fonts-dir}high_tower_text_italic-webfont.eot?#iefix") format('embedded-opentype'),
+    url("#{$fonts-dir}high_tower_text_italic-webfont.woff") format('woff'),
+    url("#{$fonts-dir}high_tower_text_italic-webfont.ttf") format('truetype'),
+    url("#{$fonts-dir}high_tower_text_italic-webfont.svg#high_tower_textitalic") format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'high_tower_text_regular';
-  src: url('/wp/wp-content/themes/Tomato/fonts/high_tower_text-webfont.eot');
-  src: url('/wp/wp-content/themes/Tomato/fonts/high_tower_text-webfont.eot?#iefix') format('embedded-opentype'),
-    url('/wp/wp-content/themes/Tomato/fonts/high_tower_text-webfont.woff') format('woff'),
-    url('/wp/wp-content/themes/Tomato/fonts/high_tower_text-webfont.ttf') format('truetype'),
-    url('/wp/wp-content/themes/Tomato/fonts/high_tower_text-webfont.svg#high_tower_textregular') format('svg');
+  src: url("#{$fonts-dir}high_tower_text-webfont.eot");
+  src: url("#{$fonts-dir}high_tower_text-webfont.eot?#iefix") format('embedded-opentype'),
+    url("#{$fonts-dir}high_tower_text-webfont.woff") format('woff'),
+    url("#{$fonts-dir}high_tower_text-webfont.ttf") format('truetype'),
+    url("#{$fonts-dir}high_tower_text-webfont.svg#high_tower_textregular") format('svg');
   font-weight: normal;
   font-style: normal;
 }
