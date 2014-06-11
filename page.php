@@ -5,11 +5,11 @@
 <section class="main-wrap">
 	<div class="main" role="main">
 
-		<h1 class="entry-title"><?php the_title(); ?></h1>
-
 		<?php do_action('foundationPress_before_content'); ?>
 
 		<?php while (have_posts()) : the_post(); ?>
+
+		<h1 class="entry-title"><?php the_title(); ?></h1>
 
 			<?php
 				$sidebar = get_post_meta( $post->ID, 'sidebar', true );
