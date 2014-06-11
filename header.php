@@ -88,3 +88,5 @@
 
   <?php do_action('foundationPress_after_header'); ?>
 
+  <section class="main-wrap">
+    <div class="main" role="main">

@@ -1,37 +1,15 @@
-<?php /* Template Name: Page */ ?>
+<?php
 
-<?php get_header(); ?>
+/* Template Name: Page */
 
-<section class="main-wrap">
-	<div class="main" role="main">
+get_header();
 
-		<?php do_action('foundationPress_before_content'); ?>
+do_action('foundationPress_before_content');
 
-		<?php while (have_posts()) : the_post(); ?>
+get_template_part( 'loop', 'index' );
 
-		<h1 class="entry-title"><?php the_title(); ?></h1>
+do_action('foundationPress_after_content');
 
-			<?php
-				$sidebar = get_post_meta( $post->ID, 'sidebar', true );
-				$classes = empty($sidebar) ? array() : array('with-sidebar');
-			?>
+get_footer();
 
-			<article <?php post_class($classes) ?> id="post-<?php the_ID(); ?>">
-				<?php do_action('foundationPress_page_before_entry_content'); ?>
-				<div class="entry-content">
-					<?php the_content(); ?>
-				</div>
-			</article>
-
-			<?php if( ! empty($sidebar) ) : ?>
-				<aside class="sidebar"><?= $sidebar ?></aside>
-			<?php endif; ?>
-
-		<?php endwhile;?>
-
-		<?php do_action('foundationPress_after_content'); ?>
-
-	</div>
-</section>
-
-<?php get_footer(); ?>
+?>
