@@ -112,6 +112,13 @@ article, aside {
   h3 { @include fancy; }
 }
 
+footer {
+  margin: 2em;
+  padding: 2em;
+  border-top: 1px solid #DDD;
+  text-align: center;
+}
+
 
 
 /* STRUCTURE RULES */
@@ -127,7 +134,10 @@ article, aside {
   .main-wrap {
     @include small(12);
 
-    .main { @include grid-row; }
+    .main {
+      @include grid-row;
+      margin-bottom: 1em;
+    }
   }
 
   article {

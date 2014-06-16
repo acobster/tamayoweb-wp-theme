@@ -34,11 +34,6 @@
   <body <?php body_class(); ?>>
   <?php do_action('foundationPress_after_body'); ?>
 
-  <div class="off-canvas-wrap">
-  <div class="inner-wrap">
-
-  <?php do_action('foundationPress_layout_start'); ?>
-
         <div class="top-bar-container contain-to-grid">
             <nav class="top-bar" data-topbar="">
                 <ul class="title-area">
