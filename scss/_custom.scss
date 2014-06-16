@@ -89,6 +89,12 @@ $fonts-dir: "/wp/wp-content/themes/Tomato/fonts/";
   font-family: CallunaSansRegular, Times, sans;
 }
 
+@mixin fancy() {
+  @include serif-italic;
+  color: $red;
+}
+  .fancy { @include fancy }
+
 
 
 /* BASE RULES */
@@ -100,9 +106,10 @@ article, aside {
 
   h2 {
     margin: 1em;
-    font-size: 1.2em;
     color: $red;
   }
+
+  h3 { @include fancy; }
 }
 
 
@@ -144,6 +151,10 @@ article, aside {
 
   aside.sidebar {
     @include large(4);
+  }
+
+  .portfolio {
+    li { text-align: center !important; }
   }
 
   .contact-fields {

@@ -128,12 +128,12 @@ $success-color: $light-green;
 // $header-text-rendering: optimizeLegibility;
 
 // We use these to control header font sizes
-// $h1-font-size: rem-calc(44);
-// $h2-font-size: rem-calc(37);
-// $h3-font-size: rem-calc(27);
-// $h4-font-size: rem-calc(23);
-// $h5-font-size: rem-calc(18);
-// $h6-font-size: 1rem;
+$h1-font-size: rem-calc(44);
+$h2-font-size: rem-calc(20);
+$h3-font-size: rem-calc(20);
+$h4-font-size: rem-calc(18);
+$h5-font-size: rem-calc(16);
+$h6-font-size: 1rem;
 
 // These control how subheaders are styled.
 // $subheader-line-height: 1.4;
@@ -379,12 +379,12 @@ $success-color: $light-green;
 // $clearing-img-bg: $clearing-bg;
 
 // We use these to style the close button
-// $clearing-close-color: #ccc;
-// $clearing-close-size: 30px;
+$clearing-close-color: $alert-color;
+$clearing-close-size: 40px;
 
 // We use these to style the arrows
 // $clearing-arrow-size: 12px;
-// $clearing-arrow-color: $clearing-close-color;
+$clearing-arrow-color: $success-color;
 
 // We use these to style captions
 // $clearing-caption-font-color: #ccc;
