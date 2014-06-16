@@ -39,22 +39,7 @@
 
   <?php do_action('foundationPress_layout_start'); ?>
 
-  <nav class="tab-bar show-for-small-only">
-    <section class="left-small">
-      <a class="left-off-canvas-toggle menu-icon" ><span></span></a>
-    </section>
-    <section class="middle tab-bar-section">
-
-      <h1 class="title"><?php bloginfo( 'name' ); ?></h1>
-
-    </section>
-  </nav>
-
-  <aside class="left-off-canvas-menu">
-    <?php foundationPress_mobile_off_canvas(); ?>
-  </aside>
-
-        <div class="top-bar-container contain-to-grid show-for-medium-up">
+        <div class="top-bar-container contain-to-grid">
             <nav class="top-bar" data-topbar="">
                 <ul class="title-area">
                     <li class="name">
@@ -64,6 +49,11 @@
                                 alt="Small Logo" />
                           </a>
                         </h1>
+                    </li>
+                    <li class="toggle-topbar menu-icon">
+                      <a href="#">
+                        <span>Menu</span>
+                      </a>
                     </li>
                 </ul>
                 <section class="top-bar-section">
