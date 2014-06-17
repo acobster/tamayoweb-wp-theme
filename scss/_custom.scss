@@ -164,7 +164,13 @@ footer {
   }
 
   .portfolio {
-    li { text-align: center !important; }
+    li {
+      text-align: center !important;
+
+      .button {
+        margin-top: 1em;
+      }
+    }
   }
 
   .contact-fields {
