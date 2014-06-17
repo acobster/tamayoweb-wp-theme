@@ -11,6 +11,23 @@
 
     <div class="entry-content">
       <?php the_content(); ?>
+
+      <div class="website-info">
+        <?php if( $website->_roles !== '' ) : ?>
+          <div class="roles">
+            <h3>Roles:</h3>
+            <p><?= $website->_roles ?></p>
+          </div>
+        <?php endif; ?>
+
+        <?php if( $website->_url !== '' ) : ?>
+          <div class="url">
+            <a href="<?= $website->_url ?>" target="_blank" class="button">
+              Visit <?php the_title(); ?>
+            </a>
+          </div>
+        <?php endif; ?>
+      </div>
     </div>
 
   </article>

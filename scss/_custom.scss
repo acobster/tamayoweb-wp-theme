@@ -194,5 +194,11 @@ footer {
       border-color: $red !important;
     }
   }
+
+  .website-info {
+    @include grid-row;
+
+    .roles, .url { @include small(6); }
+  }
 }
 
