@@ -10,16 +10,18 @@
 
     <li <?php post_class() ?> id="post-<?php the_ID(); ?>">
       <header>
-        <h2><?php the_title() ?></h2>
+        <h3><?php the_title() ?></h3>
       </header>
       <?php do_action('foundationPress_page_before_entry_content'); ?>
       <div class="entry-content">
         <?php if( has_post_thumbnail() ) : ?>
           <a href="<?= get_permalink() ?>">
-            <?php the_post_thumbnail( 'thumbnail' ); ?>
+            <?php the_post_thumbnail( 'medium' ); ?>
           </a>
         <?php endif; ?>
-        <?php the_excerpt(); ?>
+        <a href="<?= get_permalink() ?>" class="button"
+          title="Explore <?php the_title(); ?>">Explore <?php the_title(); ?>
+        </a>
       </div>
     </li>
 
