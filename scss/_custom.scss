@@ -197,8 +197,11 @@ footer {
 
   .website-info {
     @include grid-row;
+    margin-top: 2em;
+    margin-bottom: 1em;
 
-    .roles, .url { @include small(6); }
+    .roles { @include small(8); }
+    .url { @include small(4); }
   }
 }
 

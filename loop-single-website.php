@@ -22,7 +22,7 @@
 
         <?php if( $website->_url !== '' ) : ?>
           <div class="url">
-            <a href="<?= $website->_url ?>" target="_blank" class="button">
+            <a href="<?= $website->_url ?>" target="_blank" class="button success">
               Visit <?php the_title(); ?>
             </a>
           </div>
