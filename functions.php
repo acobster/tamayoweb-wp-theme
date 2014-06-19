@@ -6,6 +6,9 @@ require_once('library/entry-meta.php');
 // Custom actions
 require_once('library/actions.php');
 
+// Portfolio
+require_once('library/portfolio.php');
+
 
 
 /**
