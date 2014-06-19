@@ -12,13 +12,16 @@
       <header>
         <h3><?php the_title() ?></h3>
       </header>
-      <?php do_action('foundationPress_page_before_entry_content'); ?>
-      <div class="entry-content">
+
+      <div>
         <?php if( has_post_thumbnail() ) : ?>
           <a href="<?= get_permalink() ?>">
             <?php the_post_thumbnail( 'medium' ); ?>
           </a>
         <?php endif; ?>
+      </div>
+
+      <div>
         <a href="<?= get_permalink() ?>" class="button"
           title="Explore <?php the_title(); ?>">Explore <?php the_title(); ?>
         </a>
