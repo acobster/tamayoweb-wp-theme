@@ -2,7 +2,7 @@
 
 $designs = get_attachments_by_media_tags( array('media_tags' => 'design') ); ?>
 
-<ul class="clearing-thumbs large-block-grid-3" data-clearing>
+<ul class="portfolio design clearing-thumbs" data-clearing>
 
   <?php if( ! empty($designs) ) :
     foreach( $designs as $design ) : ?>

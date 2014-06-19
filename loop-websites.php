@@ -1,6 +1,6 @@
 <?php $query = Website::all(); ?>
 
-<ul class="large-block-grid-3 portfolio">
+<ul class="portfolio">
 
   <?php while( $query->have_posts() ) :
 

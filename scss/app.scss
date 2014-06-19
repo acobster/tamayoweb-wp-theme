@@ -181,7 +181,30 @@ footer {
   }
 
   .portfolio {
+    @include block-grid(3);
+
+    @include respond-to(medium) {
+      @include block-grid(2);
+    }
+
+    @include respond-to(small) {
+      @include block-grid(1);
+    }
+
+    &.design {
+      @include block-grid(4);
+
+      @include respond-to(medium) {
+        @include block-grid(3);
+      }
+
+      @include respond-to(small) {
+        @include block-grid(2);
+      }
+    }
+
     li {
+      margin-right: 0 !important;
       text-align: center !important;
 
       .button {
@@ -220,5 +243,9 @@ footer {
     .roles { @include small(8); }
     .url { @include small(4); }
   }
+}
+
+.clearing-blackout li {
+    clear:inherit!important;
 }
 
