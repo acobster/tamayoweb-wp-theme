@@ -11,6 +11,7 @@ Website::init();
 
 add_shortcode( 'websites', 'display_websites');
 add_shortcode( 'designs', 'display_designs');
+add_shortcode( 'fangchia', 'display_fangchia' );
 
 add_action( 'attachments_register', 'register_website_attachments' );
 
@@ -51,6 +52,13 @@ function register_website_attachments( $attachments ) {
   );
 
   $attachments->register( 'website_attachments', $args );
+}
+
+/**
+ * Display
+ */
+function display_fangchia( $atts, $content='' ) {
+  return '<span class="fangchia">'.$content.'</span>';
 }
 
 ?>
