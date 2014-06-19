@@ -243,6 +243,10 @@ footer {
     .roles { @include small(8); }
     .url { @include small(4); }
   }
+
+  .fangchia {
+    color: $red !important;
+  }
 }
 
 .clearing-blackout li {
