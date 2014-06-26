@@ -13,7 +13,8 @@ if( current_user_can('upload_files') ) : ?>
 
       <li>
         <a href="<?= $design->guid ?>" title="<?= $design->post_title ?>">
-          <?= wp_get_attachment_image( $design->ID, 'medium' ) ?>
+          <?= wp_get_attachment_image( $design->ID, 'medium', false,
+            array('data-caption' => $design->post_excerpt) ) ?>
         </a>
       </li>
 
