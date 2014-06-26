@@ -9,12 +9,18 @@ if( current_user_can('upload_files') ) : ?>
 <ul class="portfolio design clearing-thumbs" data-clearing>
 
   <?php if( ! empty($designs) ) :
-    foreach( $designs as $design ) : ?>
+    foreach( $designs as $design ) :
+      $caption = $design->post_excerpt;
+
+      // Add edit link to caption
+      if( current_user_can('upload_files') ) {
+        $caption .= ' <a href="'.get_edit_post_link($design).'">[EDIT]</a>';
+      } ?>
 
       <li>
         <a href="<?= $design->guid ?>" title="<?= $design->post_title ?>">
           <?= wp_get_attachment_image( $design->ID, 'medium', false,
-            array('data-caption' => $design->post_excerpt) ) ?>
+            array('data-caption' => $caption) ) ?>
         </a>
       </li>
 
