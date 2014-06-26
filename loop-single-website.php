@@ -13,16 +13,17 @@
       <?php the_content(); ?>
 
       <div class="website-info">
-        <?php if( $website->_roles !== '' ) : ?>
+        <?php if( $website->roles !== '' ) : ?>
           <div class="roles">
             <h3>Roles:</h3>
-            <p><?= $website->_roles ?></p>
+            <p><?= $website->roles ?></p>
           </div>
         <?php endif; ?>
 
-        <?php if( $website->_url !== '' ) : ?>
+        <?php if( $website->url !== '' ) : ?>
+
           <div class="url">
-            <a href="<?= $website->_url ?>" target="_blank" class="button success">
+            <a href="<?= $website->url ?>" target="_blank" class="button success">
               Visit <?php the_title(); ?>
             </a>
           </div>
