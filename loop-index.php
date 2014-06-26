@@ -10,6 +10,11 @@
   <article <?php post_class($classes) ?> id="post-<?php the_ID(); ?>">
     <?php do_action('foundationPress_page_before_entry_content'); ?>
     <div class="entry-content">
+
+      <?php if( current_user_can( 'edit_post', $website->ID) ) : ?>
+        <a href="<?= get_edit_post_link() ?>" class="button tiny">EDIT</a>
+      <?php endif; ?>
+
       <?php the_content(); ?>
     </div>
   </article>
