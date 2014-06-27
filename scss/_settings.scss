@@ -741,22 +741,22 @@ $clearing-arrow-color: $success-color;
 // We use these to control the left/right nav styles
 // $orbit-nav-bg: transparent;
 // $orbit-nav-bg-hover: rgba(0,0,0,0.3);
-// $orbit-nav-arrow-color: #fff;
-// $orbit-nav-arrow-color-hover: #fff;
+$orbit-nav-arrow-color: $success-color;
+$orbit-nav-arrow-color-hover: $success-color;
 
 // We use these to control the timer styles
 // $orbit-timer-bg: rgba(255,255,255,0.3);
 // $orbit-timer-show-progress-bar: true;
 
 // We use these to control the bullet nav styles
-// $orbit-bullet-nav-color: #ccc;
-// $orbit-bullet-nav-color-active: #999;
-// $orbit-bullet-radius: rem-calc(9);
+$orbit-bullet-nav-color: lighten( $success-color, 10% );
+$orbit-bullet-nav-color-active: $primary-color;
+$orbit-bullet-radius: rem-calc(9);
 
 // We use these to controls the style of slide numbers
-// $orbit-slide-number-bg: rgba(0,0,0,0);
-// $orbit-slide-number-font-color: #fff;
-// $orbit-slide-number-padding: rem-calc(5);
+$orbit-slide-number-bg: transparent;
+$orbit-slide-number-font-color: transparent;
+$orbit-slide-number-padding: rem-calc(5);
 
 // We use these to controls the css animation
 // $orbit-animation-speed: 500ms;

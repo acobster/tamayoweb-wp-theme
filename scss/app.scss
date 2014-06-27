@@ -218,7 +218,7 @@ footer {
     @include grid-row;
 
     .split {
-      @include small(6);
+      @include large(6);
       text-align: center;
 
       a {
@@ -264,6 +264,16 @@ footer {
     color: $red !important;
   }
 }
+
+
+
+/* MODULE RULES */
+
+.orbit-bullets li:hover { cursor: pointer; }
+
+
+
+/* HACKITY-HACK */
 
 .clearing-blackout li {
     clear:inherit!important;

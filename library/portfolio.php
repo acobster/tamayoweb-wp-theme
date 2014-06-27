@@ -9,12 +9,16 @@ require 'Website.php';
 // Declare custom post type Website
 Website::init();
 
+// Register shortcodes
 add_shortcode( 'websites', 'display_websites');
 add_shortcode( 'designs', 'display_designs');
 add_shortcode( 'fangchia', 'display_fangchia' );
+add_shortcode( 'slideshow', 'display_slideshow' );
 
+// Register pics attached to websites
 add_action( 'attachments_register', 'register_website_attachments' );
 
+// Portfolio admin stuff
 add_action( 'admin_bar_menu', 'add_menu_portfolio_link' );
 add_action( 'add_meta_boxes', 'add_portfolio_link' );
 
@@ -57,6 +61,15 @@ function display_websites() {
 function display_designs() {
   ob_start();
   get_template_part( 'loop', 'designs' );
+  $contents = ob_get_contents();
+  ob_end_clean();
+
+  return $contents;
+}
+
+function display_slideshow() {
+  ob_start();
+  get_template_part( 'loop', 'slides' );
   $contents = ob_get_contents();
   ob_end_clean();
 
