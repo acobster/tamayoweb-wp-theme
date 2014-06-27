@@ -214,6 +214,21 @@ footer {
     }
   }
 
+  .split-wrap {
+    @include grid-row;
+
+    .split {
+      @include small(6);
+      text-align: center;
+
+      a {
+        @include button;
+        font-size: 1.2em;
+        width: 15em;
+      }
+    }
+  }
+
   .contact-fields {
     @include grid-row;
 
