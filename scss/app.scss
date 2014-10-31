@@ -260,6 +260,10 @@ footer {
     .url { @include small(4); }
   }
 
+  .website-thumb {
+    height: 275px;
+  }
+
   .fangchia {
     color: $red !important;
   }

@@ -13,7 +13,7 @@
         <h3><?php the_title() ?></h3>
       </header>
 
-      <div>
+      <div class="website-thumb">
         <?php if( has_post_thumbnail() ) : ?>
           <a href="<?= get_permalink() ?>">
             <?php the_post_thumbnail( 'medium' ); ?>
